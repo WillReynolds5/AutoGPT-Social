@@ -49,7 +49,7 @@ def get_image(project_name):
         raise ValueError("Please add images with descriptive names with words separated by _ (ie. photo_of_house_in_san_francisco.jpg) to accounts/USERNAME/queue")
     image_fn = random.choice(images)
     # convert to jpg if other filetype
-    image_fn = convert_to_jpg(image_fn)
+    image_fn = convert_to_jpg(os.path.join("accounts", project_name, "queue", image_fn))
     image_description = image_fn.split('.')[0].split('_')
     image_description = ' '.join(image_description)
     image_path = os.path.join("accounts", project_name, "queue", image_fn)
