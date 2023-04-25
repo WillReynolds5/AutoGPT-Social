@@ -23,8 +23,6 @@ def load_config(account_dir):
     except:
         raise ValueError(f'Could not find an account with the name {account_dir}. please create an account first with initialize_bot.py')
 
-#TODO: convert image to jpg before posting
-
 def should_post(prompt, post_count=3):
     if re.search(r"\[POST [a-z0-9]{19}\]", prompt) is None:
         return True
