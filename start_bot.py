@@ -52,10 +52,6 @@ def get_image(project_name):
     image_fn = random.choice(images)
     # convert to jpg if other filetype
     image_fn = convert_to_jpg(image_fn)
-    if image_fn:
-        print(f"Converted image saved as {image_fn}")
-    else:
-        print("Failed to convert image to JPG")
     image_description = image_fn.split('.')[0].split('_')
     image_description = ' '.join(image_description)
     image_path = os.path.join("accounts", project_name, "queue", image_fn)

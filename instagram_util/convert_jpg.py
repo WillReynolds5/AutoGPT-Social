@@ -10,8 +10,8 @@ def convert_to_jpg(input_file_path):
             # Get the output file path by changing the extension to ".jpg"
             output_file_path = os.path.splitext(input_file_path)[0] + ".jpg"
             # Save the image in JPEG format
+            os.remove(input_file_path)
             img.save(output_file_path, "JPEG", quality=95)
         return output_file_path
     except IOError:
-        print(f"Error converting {input_file_path} to JPEG")
-        return None
+        raise IOError(f"Error converting {input_file_path} to JPEG")

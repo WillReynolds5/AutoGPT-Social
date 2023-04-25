@@ -30,7 +30,9 @@
     <li>📷 Give your images simple yet descriptive titles so the bot knows what is in them (separate words with _) ie. photo_of_golden_gate_bridge.jpg</li>
     <li>🚀 Run the Instagram bot with the specified account directory and desired number of posts per day:<br>
 	<code>python start_bot.py &lt;instagram_username&gt; &lt;post_count&gt;</code></li>
-	<p>🔄 Replace &lt;instagram_username&gt; with the appropriate Instagram username directory created by the <code>initialize_bot.py</code> script and &lt;post_count&gt; with the desired number of posts per day.</p>
+	<li>🔄 Replace &lt;instagram_username&gt; with the appropriate Instagram username directory created by the <code>initialize_bot.py</code> script and &lt;post_count&gt; with the desired number of posts per day.</li>
+	<li>Input the wrong api_key, username or password? Fix them at <code>accounts/&lt;instagram_username&gt;/config.json</code></li>
+
 </ol>
 <!-- Add this section where you want to include the table -->
 <section>
