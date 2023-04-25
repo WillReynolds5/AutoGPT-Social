@@ -13,7 +13,7 @@
 <h2>🛠️ Setup and Installation</h2>
 <ol>
 	<li>🐍 Make sure you have Python 3.x installed (tested on 3.8). You can download it from <a href="https://www.python.org/downloads/">here</a>.</li>
-	<li>💻 <code>pip install openai instagrapi Pillow</code></li>
+	<li>💻 <code>pip install openai instagrapi instaloader Pillow </code></li>
 	<li>📦 Clone this repository:<br>
 	<code>git clone https://github.com/WillReynolds5/AutoGPT-Social.git</code><br>
 	<code>cd AutoGPT-Social</code></li>
