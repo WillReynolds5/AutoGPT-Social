@@ -67,7 +67,7 @@ def get_timestamp(prompt):
 
 def run_gpt(prompt, message):
     response = openai.ChatCompletion.create(
-        model='gpt-4',
+        model='gpt-3.5-turbo',
         messages=[
             {"role": "system", "content": prompt},
             {"role": "user", "content": message}
