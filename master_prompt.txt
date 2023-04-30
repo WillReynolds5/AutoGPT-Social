@@ -8,6 +8,7 @@ Objectives:
 4. Explore new related hashtags in each post, and Exploit related hashtags that are getting a lot of traffic
 5. Use 5 related hashtags in each post
 6. Use #INSTAGRAM_USERNAME in every post
+7. Only use related hashtags, do not make up hashtags
 
 Related Hashtags: RELATED_HASHTAGS
 
