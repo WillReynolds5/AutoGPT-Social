@@ -30,7 +30,7 @@ def should_post(prompt, post_count=3):
     response = run_gpt(prompt, message)
     if 'yes' in response.strip().lower():
         return True
-    return True
+    return False
 
 def start_post(prompt, project_name):
     id = uuid.uuid4().hex
@@ -55,7 +55,7 @@ def get_image(project_name):
     return image_path, image_description
 
 def get_caption(prompt, description):
-    message = f"create the instagram post from the image description, if the description wants tips include button points. \ndescription: {description}. Write the caption in the following format. Include nothing but the caption. \nie. CAPTION: [write caption here]"
+    message = f"create the instagram post from the image description. \ndescription: {description}. Write the caption in the following format. Include nothing but the caption. \nie. CAPTION: [write caption here]"
     caption = run_gpt(prompt, message)
     caption = caption.replace("Caption:", "").replace("CAPTION:", "").replace('"', "").strip()
     prompt = prompt + "\nCAPTION: {}".format(caption)
@@ -67,7 +67,7 @@ def get_timestamp(prompt):
 
 def run_gpt(prompt, message):
     response = openai.ChatCompletion.create(
-        model='gpt-3.5-turbo',
+        model='gpt-4',
         messages=[
             {"role": "system", "content": prompt},
             {"role": "user", "content": message}
